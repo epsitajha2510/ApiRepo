@@ -23,14 +23,14 @@ public class Client
 			
 			//To get the Status Code
 			int statusCode =closeablehttpsResponse.getStatusLine().getStatusCode();
-			System.out.println(" The Status Code--------->" + statusCode);
+			System.out.println("The Status Code--------->" + statusCode);
 			
 			
 			//to get the Json String
 			String responseString =EntityUtils.toString(closeablehttpsResponse.getEntity(), "UTF-8");
 			JSONObject reponseOject = new JSONObject(responseString);
 			
-			System.out.println(" The JSON Response--------->"+ reponseOject);
+			System.out.println("The JSON Response--------->"+ reponseOject);
 			
 			
 			// to get the headers
