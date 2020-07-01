@@ -6,7 +6,7 @@
       <class name="com.qa.test.Test">
         <methods>
           <include name="precondition"/>
-          <include name="getAPItest"/>
+          <include name="getAPItestWithoutHeaders"/>
         </methods>
       </class> <!-- com.qa.test.Test -->
     </classes>

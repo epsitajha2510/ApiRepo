@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1449" started-at="2020-06-29T21:56:22 IST" finished-at="2020-06-29T21:56:23 IST">
+  <suite name="Default suite" duration-ms="2787" started-at="2020-07-01T23:17:39 IST" finished-at="2020-07-01T23:17:41 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1449" started-at="2020-06-29T21:56:22 IST" finished-at="2020-06-29T21:56:23 IST">
+    <test name="Default test" duration-ms="2787" started-at="2020-07-01T23:17:39 IST" finished-at="2020-07-01T23:17:41 IST">
       <class name="com.qa.test.Test">
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.qa.test.Test@370736d9]" name="precondition" is-config="true" duration-ms="5" started-at="2020-06-29T21:56:22 IST" finished-at="2020-06-29T21:56:22 IST">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.qa.test.Test@370736d9]" name="precondition" is-config="true" duration-ms="9" started-at="2020-07-01T23:17:39 IST" finished-at="2020-07-01T23:17:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="getAPItest()[pri:0, instance:com.qa.test.Test@370736d9]" name="getAPItest" duration-ms="1406" started-at="2020-06-29T21:56:22 IST" finished-at="2020-06-29T21:56:23 IST">
+        <test-method status="PASS" signature="getAPItestWithoutHeaders()[pri:1, instance:com.qa.test.Test@370736d9]" name="getAPItestWithoutHeaders" duration-ms="1812" started-at="2020-07-01T23:17:39 IST" finished-at="2020-07-01T23:17:40 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAPItest -->
+        </test-method> <!-- getAPItestWithoutHeaders -->
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.qa.test.Test@370736d9]" name="precondition" is-config="true" duration-ms="11" started-at="2020-07-01T23:17:40 IST" finished-at="2020-07-01T23:17:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="getAPItestWithHeaders()[pri:2, instance:com.qa.test.Test@370736d9]" name="getAPItestWithHeaders" duration-ms="878" started-at="2020-07-01T23:17:40 IST" finished-at="2020-07-01T23:17:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPItestWithHeaders -->
       </class> <!-- com.qa.test.Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

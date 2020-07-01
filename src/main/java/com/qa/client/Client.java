@@ -9,42 +9,35 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
+import java.util.Map;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.Header;
 
 public class Client 
 {
-		// GET Method
-		public void get(String url) throws ClientProtocolException, IOException
+		// GET Method without Headers
+		public CloseableHttpResponse get(String url) throws ClientProtocolException, IOException
 		{
 			CloseableHttpClient httpClient =HttpClients.createDefault();
 			HttpGet httpGet = new HttpGet(url);  //to get the Request
 			CloseableHttpResponse closeablehttpsResponse = httpClient.execute(httpGet); //to hit the URL.
 			
+			return closeablehttpsResponse;
+		}
+		
+		
+		// Get Method with Headers
+		public CloseableHttpResponse get(String url, HashMap<String, String> hashMap) throws ClientProtocolException, IOException
+		{
+			CloseableHttpClient httpClient =HttpClients.createDefault();
+			HttpGet httpGet = new HttpGet(url);  //to get the Request
 			
-			//To get the Status Code
-			int statusCode =closeablehttpsResponse.getStatusLine().getStatusCode();
-			System.out.println("The Status Code--------->" + statusCode);
-			
-			
-			//to get the Json String
-			String responseString =EntityUtils.toString(closeablehttpsResponse.getEntity(), "UTF-8");
-			JSONObject reponseOject = new JSONObject(responseString);
-			
-			System.out.println("The JSON Response--------->"+ reponseOject);
-			
-			
-			// to get the headers
-			Header[] responseHeader = closeablehttpsResponse.getAllHeaders();
-			HashMap<String, String> allheader = new HashMap<String, String>();
-			for(Header header : responseHeader)
+			for(Map.Entry<String, String> entry : hashMap.entrySet())
 			{
-				allheader.put(header.getName(), header.getValue());
+				httpGet.addHeader(entry.getKey(), entry.getValue());
 			}
+			CloseableHttpResponse closeablehttpsResponse = httpClient.execute(httpGet); //to hit the URL.
 			
-			System.out.println("The Header Array--------->" + allheader);
-			
-			
-			
-			
+			return closeablehttpsResponse;
 		}
 }

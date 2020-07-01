@@ -8,7 +8,14 @@ public class TestBase
 {
 	
 	protected Properties prop;
-    public TestBase() {
+	
+	public int Response_Status_Code_200 = 200;
+	public int Response_Status_Code_300 = 300;
+	public int Response_Status_Code_404 = 404;
+	public int Response_Status_Code_505 = 200;
+	
+    public TestBase() 
+    {
 		
     	{
 			 try {
