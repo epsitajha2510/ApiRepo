@@ -12,10 +12,8 @@ import org.testng.annotations.BeforeMethod;
 import com.qa.Utility.TestUtility;
 import com.qa.base.TestBase;
 import com.qa.client.Client;
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 
-
-public class Test extends TestBase
+public class GetAPITest extends TestBase
 {
 	TestBase tBase;
 	Client client;
@@ -166,6 +164,9 @@ public class Test extends TestBase
 				}
 				
 				System.out.println("The Header Array--------->" + allheader);
+				JSONObject jObjectHeader = new JSONObject(allheader);
+				String Date =TestUtility.getValueByJPath(jObjectHeader, "/Date");
+				System.out.println(Date);
 				System.out.println("__________________________________________________________________________________________");
 				System.out.println();
 	}
