@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1972" started-at="2020-07-02T23:18:15 IST" finished-at="2020-07-02T23:18:16 IST">
+  <suite name="Default suite" duration-ms="1799" started-at="2020-07-24T11:50:13 IST" finished-at="2020-07-24T11:50:14 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1972" started-at="2020-07-02T23:18:15 IST" finished-at="2020-07-02T23:18:16 IST">
+    <test name="Default test" duration-ms="1799" started-at="2020-07-24T11:50:13 IST" finished-at="2020-07-24T11:50:14 IST">
       <class name="com.qa.test.PostAPITest">
-        <test-method status="PASS" signature="postCall()[pri:0, instance:com.qa.test.PostAPITest@210366b4]" name="postCall" duration-ms="1925" started-at="2020-07-02T23:18:15 IST" finished-at="2020-07-02T23:18:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCall -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.qa.test.PostAPITest@210366b4]" name="precondition" is-config="true" duration-ms="0" started-at="2020-07-02T23:18:15 IST" finished-at="2020-07-02T23:18:15 IST">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.qa.test.PostAPITest@210366b4]" name="precondition" is-config="true" duration-ms="9" started-at="2020-07-24T11:50:13 IST" finished-at="2020-07-24T11:50:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
+        <test-method status="PASS" signature="postCall()[pri:0, instance:com.qa.test.PostAPITest@210366b4]" name="postCall" duration-ms="1731" started-at="2020-07-24T11:50:13 IST" finished-at="2020-07-24T11:50:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCall -->
       </class> <!-- com.qa.test.PostAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
